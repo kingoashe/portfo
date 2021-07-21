@@ -296,12 +296,6 @@ main button:active {
   font-size: 30px;
 }
 
-footer {
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  text-align: center;
-}
-
 /* utilities  */
 .container {
   max-width: 1170px;
@@ -460,6 +454,55 @@ footer {
     position: fixed;
     width: 300px;
     height: 100vh;
+    /* background-color: var(--white-color); */
+    background-color: #0478ed2a;
+    transform: translateX(500px);
+    z-index: 20;
+  }
+  header ul li {
+    position: relative;
+  }
+
+  header ul::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    /* z-index: 0 !important; */
+    /* background: #333; */
+    backdrop-filter: blur(10px);
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
+
+  header ul li a {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  header ul {
+    /* display: none; */
+    /* visibility: hidden; */
+    flex-direction: column;
+    top: 70px;
+    right: 0;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
     background-color: var(--white-color);
     transform: translateX(500px);
   }
@@ -470,12 +513,6 @@ footer {
 
   header ul li a {
     font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 #services{
@@ -492,8 +529,8 @@ footer {
 .box{
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 550px;
+  width: 300px;
+  height: 450px;
   border: 1px solid black;
   margin: 5px ;
   align-items: center;
