@@ -182,12 +182,11 @@ header.active ul {
 main {
   width: 100%;
   height: 90vh;
-  background: url(../images/background.jpg);
+  background: url(../images/background0.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* border-top: 2px solid #047aed; */
 }
 
 main .container {
@@ -228,7 +227,6 @@ main::after {
   right: 0;
   width: 100%;
   height: 100%;
-  /* z-index: -1; */
   background-color: #333;
 }
 
@@ -296,7 +294,6 @@ main button:active {
   font-size: 30px;
 }
 
-/* utilities  */
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -446,15 +443,12 @@ main button:active {
     display: block;
   }
   header ul {
-    /* display: none; */
-    /* visibility: hidden; */
     flex-direction: column;
     top: 70px;
     right: 0;
     position: fixed;
     width: 300px;
     height: 100vh;
-    /* background-color: var(--white-color); */
     background-color: #0478ed2a;
     transform: translateX(500px);
     z-index: 20;
@@ -470,8 +464,6 @@ main button:active {
     width: 100%;
     top: 0;
     right: 0;
-    /* z-index: 0 !important; */
-    /* background: #333; */
     backdrop-filter: blur(10px);
   }
 
